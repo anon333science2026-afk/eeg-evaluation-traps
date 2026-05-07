@@ -11,9 +11,9 @@ Submitted to NeurIPS 2026 Evaluations & Datasets Track.
 
 This repository is being cleaned up for public release. Split manifests, pipeline configurations, YAML configs, and feature extraction code will be documented and released here.
 
-If you need something urgently, open an issue and I will prioritize it.
+If you need something urgently, open an issue and I will prioritize it. : ) .
 
-**Note on anonymization:** This repository is being carefully reviewed to remove identifying information. This is non-trivial — the pipeline runs on HPC infrastructure with Docker containers, and configuration files may contain paths or environment variables tied to the original compute environment. If you spot anything that should be removed, please open an issue.
+**Note on anonymization:** This repository is being carefully reviewed to remove identifying information. This is non-trivial and we want to be really careful not to let something slip. The pipeline runs on HPC infrastructure with Docker containers, and configuration files may contain paths or environment variables tied to the original compute environment. If you spot anything that should be removed, please open an issue.
 
 ---
 
