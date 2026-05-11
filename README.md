@@ -7,7 +7,7 @@ Submitted to NeurIPS 2026 Evaluations & Datasets Track.
 
 ---
 
-## Status: Coming Soon
+## Status: In Progress
 
 This repository is being cleaned up for public release. Split manifests, pipeline configurations, YAML configs, and feature extraction code will be documented and released here.
 
