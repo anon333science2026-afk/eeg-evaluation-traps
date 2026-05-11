@@ -1,0 +1,211 @@
+project:
+  name: PCA_W_C_mdd_cs_cntrl_seed44_eyesopen_EO
+  output_dir: ./data
+  experiment_type: ML Classification
+  subjects_or_events: subjects
+  deployment_method: Singularity with Slurm
+  random_seed: 44
+  expose_ports: 'No'
+  config_name: config_PCA_W_C_mdd_cs_cntrl_seed44_eyesopen_EO.yaml
+  slurm_options:
+    build: --time=00:15:00 --mem=12G --cpus-per-task=2 --account=<your-slurm-account>
+    pyspark: --time=00:30:00 --mem=56G --cpus-per-task=12 --account=<your-slurm-account>
+    ray: --time=00:30:00 --mem=56G --cpus-per-task=12 --account=<your-slurm-account>
+data_input:
+  groups:
+    mdd:
+    - /path/to/data/mdd/sub-030/eeg/sub-030_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-031/eeg/sub-031_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-032/eeg/sub-032_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-033/eeg/sub-033_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-034/eeg/sub-034_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-035/eeg/sub-035_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-037/eeg/sub-037_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-038/eeg/sub-038_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-039/eeg/sub-039_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-040/eeg/sub-040_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-041/eeg/sub-041_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-042/eeg/sub-042_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-043/eeg/sub-043_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-044/eeg/sub-044_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-045/eeg/sub-045_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-046/eeg/sub-046_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-047/eeg/sub-047_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-048/eeg/sub-048_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-049/eeg/sub-049_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-050/eeg/sub-050_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-051/eeg/sub-051_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-052/eeg/sub-052_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-053/eeg/sub-053_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-054/eeg/sub-054_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-055/eeg/sub-055_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-056/eeg/sub-056_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-057/eeg/sub-057_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-058/eeg/sub-058_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-059/eeg/sub-059_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-060/eeg/sub-060_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-061/eeg/sub-061_task-eyesopen_eeg.edf
+    cntrl:
+    - /path/to/data/mdd/sub-001/eeg/sub-001_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-002/eeg/sub-002_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-003/eeg/sub-003_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-004/eeg/sub-004_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-005/eeg/sub-005_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-006/eeg/sub-006_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-007/eeg/sub-007_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-008/eeg/sub-008_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-009/eeg/sub-009_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-010/eeg/sub-010_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-011/eeg/sub-011_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-012/eeg/sub-012_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-013/eeg/sub-013_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-014/eeg/sub-014_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-015/eeg/sub-015_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-016/eeg/sub-016_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-017/eeg/sub-017_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-018/eeg/sub-018_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-019/eeg/sub-019_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-020/eeg/sub-020_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-021/eeg/sub-021_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-022/eeg/sub-022_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-023/eeg/sub-023_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-024/eeg/sub-024_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-026/eeg/sub-026_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-027/eeg/sub-027_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-028/eeg/sub-028_task-eyesopen_eeg.edf
+    - /path/to/data/mdd/sub-029/eeg/sub-029_task-eyesopen_eeg.edf
+  reuse_processed_subjects: 'Yes'
+  save_processed_subjects: 'Yes'
+  reuse_transformed: 'No'
+  save_transformed: 'Yes'
+  reuse_transformed_across_experiments: 'No'
+  reuse_processed_subjects_across_experiments: 'Yes'
+preprocessing:
+  bands:
+    Delta:
+    - 0.5
+    - 4
+    Theta:
+    - 4
+    - 8
+    Alpha:
+    - 8
+    - 12
+    Beta:
+    - 12
+    - 30
+  window_size: 3.0
+  sliding_window: 0.5
+  reject_by_annotation: 'Yes'
+  normalize_psd: 'Yes'
+  use_epoch_rejection: 'Yes'
+  epoch_rejection:
+    reject: 800.0
+    flat: 0.3
+  extreme_datapoint_removal: null
+feature_extraction:
+  method: welch
+  features:
+    per_channel_across_bands:
+    - band_power
+    - none
+    per_channel_per_band:
+    - relative_band_power
+  show_intermediate_results: 'No'
+  show_intermediate_counts: 'No'
+  output_format: ml
+feature_transformation:
+  transformations:
+  - Z-score standardization
+  - PCA (retain 95% variance)
+  synthetic: None
+data_transformation_strategy:
+  strategy: Within-subject (intra subject split) train/test split (80/20 per subject)
+    - each subject contributes to both train and test
+  intra_test_train_split:
+    train_ratio: 0.8
+    random_seed: 44
+    split_method: random
+  shuffle_transformed_data: 'Yes'
+pyspark:
+  master: 12
+  driver_memory: 36
+  executor_memory: 36
+  executor_cores: 12
+  shuffle_partitions: 24
+ray:
+  search_strategies:
+  - grid_search
+  grid_search:
+    models:
+    - XGBoost
+    - MLP (Neural Network)
+    - KNN
+    - SVM
+    model_configs:
+      XGBoost:
+        use_default: false
+        hyperparameters:
+          n_estimators:
+          - '100'
+          max_depth:
+          - '3'
+          - '6'
+          - '9'
+          learning_rate:
+          - '0.2'
+          subsample:
+          - '0.7'
+      MLP (Neural Network):
+        use_default: false
+        hyperparameters:
+          hidden_layer_sizes:
+          - - 100
+          - - 150
+            - 50
+          - - 200
+            - 100
+            - 50
+          activation:
+          - tanh
+          alpha:
+          - '0.1'
+      KNN:
+        use_default: false
+        hyperparameters:
+          n_neighbors:
+          - 1
+          - 7
+          - 15
+          weights:
+          - uniform
+          metric:
+          - euclidean
+      SVM:
+        use_default: false
+        hyperparameters:
+          C:
+          - '0.1'
+          kernel:
+          - linear
+          - rbf
+          - poly
+          gamma:
+          - auto
+    max_concurrent_trials: 9
+    cv_folds: 5
+  metric: accuracy
+  mode: max
+  graph_data_visualization:
+    save_prediction_outputs: 'Yes'
+    best_models_graph: 'Yes'
+    per_model_accross_hyperparameters_graph: 'Yes'
+    per_model_per_hyperparameter_across_folds_graph: 'Yes'
+    per_subject_analysis_graph: 'Yes'
+    per_subject_top_n_models: 5
+    per_subject_hyperparameter_analysis: 'Yes'
+  resources:
+    num_cpus: 12
+    memory_gb: 42
+    object_store_memory_gb: 8
+    num_gpus: 0

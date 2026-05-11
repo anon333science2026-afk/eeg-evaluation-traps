@@ -1,0 +1,211 @@
+project:
+  name: ANOVA_W_C_ftd_vs_cntrl_seed43
+  output_dir: ./data
+  experiment_type: ML Classification
+  subjects_or_events: subjects
+  deployment_method: Singularity with Slurm
+  random_seed: 43
+  expose_ports: 'No'
+  config_name: config_ANOVA_W_C_ftd_vs_cntrl_seed43.yaml
+  slurm_options:
+    build: --time=00:15:00 --mem=12G --cpus-per-task=2 --account=<your-slurm-account>
+    pyspark: --time=08:00:00 --mem=56G --cpus-per-task=12 --account=<your-slurm-account>
+    ray: --time=08:00:00 --mem=56G --cpus-per-task=12 --account=<your-slurm-account>
+data_input:
+  groups:
+    ftd:
+    - /path/to/data/ad-ftd/sub-066/eeg/sub-066_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-067/eeg/sub-067_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-068/eeg/sub-068_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-069/eeg/sub-069_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-070/eeg/sub-070_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-071/eeg/sub-071_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-072/eeg/sub-072_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-073/eeg/sub-073_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-074/eeg/sub-074_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-075/eeg/sub-075_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-076/eeg/sub-076_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-077/eeg/sub-077_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-078/eeg/sub-078_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-079/eeg/sub-079_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-080/eeg/sub-080_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-081/eeg/sub-081_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-082/eeg/sub-082_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-083/eeg/sub-083_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-084/eeg/sub-084_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-085/eeg/sub-085_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-086/eeg/sub-086_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-087/eeg/sub-087_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-088/eeg/sub-088_task-eyesclosed_eeg.set
+    cntrl:
+    - /path/to/data/ad-ftd/sub-037/eeg/sub-037_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-038/eeg/sub-038_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-039/eeg/sub-039_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-040/eeg/sub-040_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-041/eeg/sub-041_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-042/eeg/sub-042_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-043/eeg/sub-043_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-044/eeg/sub-044_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-045/eeg/sub-045_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-046/eeg/sub-046_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-047/eeg/sub-047_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-048/eeg/sub-048_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-049/eeg/sub-049_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-050/eeg/sub-050_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-051/eeg/sub-051_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-052/eeg/sub-052_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-053/eeg/sub-053_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-054/eeg/sub-054_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-055/eeg/sub-055_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-056/eeg/sub-056_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-057/eeg/sub-057_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-058/eeg/sub-058_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-059/eeg/sub-059_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-060/eeg/sub-060_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-061/eeg/sub-061_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-062/eeg/sub-062_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-063/eeg/sub-063_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-064/eeg/sub-064_task-eyesclosed_eeg.set
+    - /path/to/data/ad-ftd/sub-065/eeg/sub-065_task-eyesclosed_eeg.set
+  reuse_processed_subjects: 'Yes'
+  save_processed_subjects: 'Yes'
+  reuse_transformed: 'No'
+  save_transformed: 'Yes'
+  reuse_transformed_across_experiments: 'No'
+  reuse_processed_subjects_across_experiments: 'Yes'
+preprocessing:
+  bands:
+    Delta:
+    - 0.5
+    - 4
+    Theta:
+    - 4
+    - 8
+    Alpha:
+    - 8
+    - 12
+    Beta:
+    - 12
+    - 30
+  window_size: 3.0
+  sliding_window: 0.5
+  reject_by_annotation: 'Yes'
+  normalize_psd: 'Yes'
+  use_epoch_rejection: 'Yes'
+  epoch_rejection:
+    reject: 800.0
+    flat: 0.3
+  extreme_datapoint_removal: null
+feature_extraction:
+  method: welch
+  features:
+    per_channel_across_bands:
+    - band_power
+    - none
+    per_channel_per_band:
+    - relative_band_power
+  show_intermediate_results: 'No'
+  show_intermediate_counts: 'No'
+  output_format: ml
+feature_transformation:
+  transformations:
+  - ANOVA F-test
+  - MinMax scaler
+  synthetic: None
+  minmax_range:
+  - -1.0
+  - 1.0
+  anova_label_column: Group
+  anova_label_type: categorical
+  anova_selection_mode: fwe
+  anova_selection_threshold: 0.05
+data_transformation_strategy:
+  strategy: Within-subject (intra subject split) train/test split (80/20 per subject)
+    - each subject contributes to both train and test
+  intra_test_train_split:
+    train_ratio: 0.8
+    random_seed: 43
+    split_method: random
+  shuffle_transformed_data: 'Yes'
+pyspark:
+  master: 12
+  driver_memory: 36
+  executor_memory: 36
+  executor_cores: 12
+  shuffle_partitions: 24
+ray:
+  search_strategies:
+  - grid_search
+  grid_search:
+    models:
+    - XGBoost
+    - MLP (Neural Network)
+    - KNN
+    - SVM
+    model_configs:
+      XGBoost:
+        use_default: false
+        hyperparameters:
+          n_estimators:
+          - '100'
+          max_depth:
+          - '3'
+          - '6'
+          - '9'
+          learning_rate:
+          - '0.2'
+          subsample:
+          - '0.7'
+      MLP (Neural Network):
+        use_default: false
+        hyperparameters:
+          hidden_layer_sizes:
+          - - 100
+          - - 150
+            - 50
+          - - 200
+            - 100
+            - 50
+          activation:
+          - tanh
+          alpha:
+          - '0.1'
+      KNN:
+        use_default: false
+        hyperparameters:
+          n_neighbors:
+          - 1
+          - 7
+          - 15
+          weights:
+          - uniform
+          metric:
+          - euclidean
+      SVM:
+        use_default: false
+        hyperparameters:
+          C:
+          - '0.1'
+          kernel:
+          - linear
+          - rbf
+          - poly
+          gamma:
+          - auto
+    max_concurrent_trials: 9
+    cv_folds: 5
+  metric: accuracy
+  mode: max
+  graph_data_visualization:
+    save_prediction_outputs: 'Yes'
+    best_models_graph: 'Yes'
+    per_model_accross_hyperparameters_graph: 'Yes'
+    per_model_per_hyperparameter_across_folds_graph: 'Yes'
+    per_subject_analysis_graph: 'Yes'
+    per_subject_top_n_models: 5
+    per_subject_hyperparameter_analysis: 'Yes'
+  resources:
+    num_cpus: 12
+    memory_gb: 42
+    object_store_memory_gb: 8
+    num_gpus: 0
