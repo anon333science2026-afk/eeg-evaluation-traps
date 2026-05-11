@@ -1,1 +1,13 @@
 private-dev-notes
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.ipynb_checkpoints/
+*.swp
+*.swo
+.idea/
+.vscode/
+*.egg-info/
+build/
+dist/
