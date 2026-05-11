@@ -8,7 +8,7 @@ Submitted to NeurIPS 2026.
 
 ---
 
-## Status
+## Status: In Progress
 
 | Component                                                           | State          |
 | ------------------------------------------------------------------- | -------------- |
