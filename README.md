@@ -10,14 +10,16 @@ Submitted to NeurIPS 2026.
 
 ## Status: In Progress
 
-| Component                                                           | State          |
-| ------------------------------------------------------------------- | -------------- |
-| `configs/` — 120 YAML pipeline configurations (5 cohorts × 24 each) | ✅ Released    |
-| `manifests/` — held-out subject IDs per fold for every cohort       | ✅ Released    |
-| `pipeline/` — PySpark + Ray pipeline source                         | 🚧 Coming soon |
-| `bids_builders/` — BIDS curation scripts for MDD and SCZ            | 🚧 Coming soon |
-| `figures/` — figure regeneration scripts                            | 🚧 Coming soon |
-| `tables/` — table verification / audit framework                    | 🚧 Coming soon |
+| Component                                                                                  | State          |
+| ------------------------------------------------------------------------------------------ | -------------- |
+| `configs/` — 120 YAML pipeline configurations (5 cohorts × 24 each)                        | ✅ Released    |
+| `manifests/` — held-out subject IDs per fold for every cohort                              | ✅ Released    |
+| `data/` — canonical EEG parquets, results CSVs, and W_C summary CSVs                       | ✅ Released    |
+| `tables/` — per-table audit framework (recompute every paper table from `data/`)           | ✅ Released    |
+| `figures/` — figure regeneration scripts (every paper figure from `data/`)                 | ✅ Released    |
+| `tools/` — helpers to rebuild W_C summary CSVs from raw pipeline outputs                   | ✅ Released    |
+| `pipeline/` — PySpark + Ray pipeline source                                                | 🚧 Coming soon |
+| `bids_builders/` — BIDS curation scripts for MDD and SCZ                                   | 🚧 Coming soon |
 
 If you need anything in 🚧 status urgently, open an issue.
 
@@ -35,13 +37,22 @@ eeg-evaluation-traps/
 │   ├── mdd_ec/{lpso, w_c}/     MDD vs control, eyes-closed (Mumtaz 2017)
 │   ├── mdd_eo/{lpso, w_c}/     MDD vs control, eyes-open (Mumtaz 2017)
 │   └── scz/{lpso, w_c}/        SCZ vs control (RepOD Olejarczyk 2017)
-├── manifests/                  Held-out subject IDs per fold
-│   ├── README.md
-│   └── <cohort>_p<P>_folds.csv (10 files; see manifests/README.md)
+├── manifests/                  Held-out subject IDs per fold (10 CSVs)
+├── data/                       Canonical EEG data + audit summaries
+│   ├── canonical/<cohort>/     Post-rejection epoch parquets (5 cohorts)
+│   ├── results/<cohort>/       Combined and fold-level result CSVs
+│   ├── per_subject_summaries/  Per-subject epoch counts + top ANOVA features
+│   ├── ad_extras/              AD-specific merged fold + prediction CSVs
+│   ├── w_c_per_model_accuracies.csv  Pre-computed W_C overlap accuracy
+│   └── w_c_subject_acc.csv     Pre-computed W_C majority-vote Sub. Acc.
+├── tables/                     Per-table audit framework
+│   ├── diff_T<N>.csv           Per-cell (claimed, computed, delta, status)
+│   ├── table_T<N>_recomputed.csv  Full recomputed tables
+│   └── test-and-build/         check_T<N>_*.py + build_subj_acc_tables.py
+├── figures/                    Figure regeneration scripts (19 .py files)
+├── tools/                      W_C summary precompute scripts
 ├── pipeline/                   PySpark + Ray pipeline source (coming soon)
 ├── bids_builders/              BIDS curation scripts (coming soon)
-├── figures/                    Figure regeneration scripts (coming soon)
-├── tables/                     Table-by-table audit framework (coming soon)
 └── LICENSE                     MIT
 ```
 
