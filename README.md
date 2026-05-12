@@ -18,8 +18,8 @@ Submitted to NeurIPS 2026.
 | `tables/` — per-table audit framework (recompute every paper table from `processed_data/`)           | ✅ Released    |
 | `figures/` — figure regeneration scripts (every paper figure from `processed_data/`)                 | ✅ Released    |
 | `tools/` — helpers to rebuild W_C summary CSVs from raw pipeline outputs                   | ✅ Released    |
+| `data_sources/` — per-cohort download + curation (ds004504 submodule for AD/FTD; MDD + SCZ BIDS builders) | ✅ Released    |
 | `pipeline/` — PySpark + Ray pipeline source                                                | 🚧 Coming soon |
-| `bids_builders/` — BIDS curation scripts for MDD and SCZ                                   | 🚧 Coming soon |
 
 If you need anything in 🚧 status urgently, open an issue.
 
