@@ -1,0 +1,7 @@
+experiment,pipeline,split,P,unique_folds
+T-test_P_6,ANOVA,LPSO,6.0,50
+PCA_P_6,PCA,LPSO,6.0,50
+T-test_P_2,ANOVA,LPSO,2.0,50
+PCA_P_2,PCA,LPSO,2.0,50
+T-test_SO,ANOVA,SO,,10
+PCA_SO,PCA,SO,,10

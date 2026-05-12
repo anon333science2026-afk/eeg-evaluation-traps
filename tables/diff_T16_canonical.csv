@@ -1,0 +1,121 @@
+disease,pipeline,P,cell,claimed,computed,delta,status,tolerance
+AD,T-test,6,ep_min,0.699,0.697,-0.002,PASS,0.005
+AD,T-test,6,ep_max,0.727,0.739,0.012,FAIL,0.005
+AD,T-test,6,sub_min,0.793,0.833,0.04,FAIL,0.005
+AD,T-test,6,sub_max,0.857,0.833,-0.024,FAIL,0.005
+AD,T-test,6,gap_min,-14.1,-13.665,0.435,PASS,1.0
+AD,T-test,6,gap_max,-6.6,-9.39,-2.79,FAIL,1.0
+AD,T-test,2,ep_min,0.66,0.662,0.002,PASS,0.005
+AD,T-test,2,ep_max,0.682,0.749,0.067,FAIL,0.005
+AD,T-test,2,sub_min,0.72,1.0,0.28,FAIL,0.005
+AD,T-test,2,sub_max,0.77,1.0,0.23,FAIL,0.005
+AD,T-test,2,gap_min,-11.0,-33.774,-22.774,FAIL,1.0
+AD,T-test,2,gap_max,-5.4,-25.139,-19.739,FAIL,1.0
+AD,PCA,6,ep_min,0.549,0.551,0.002,PASS,0.005
+AD,PCA,6,ep_max,0.596,0.599,0.003,PASS,0.005
+AD,PCA,6,sub_min,0.55,0.5,-0.05,FAIL,0.005
+AD,PCA,6,sub_max,0.623,0.5,-0.123,FAIL,0.005
+AD,PCA,6,gap_min,-5.1,5.126,10.226,FAIL,1.0
+AD,PCA,6,gap_max,3.6,9.935,6.335,FAIL,1.0
+AD,PCA,2,ep_min,0.533,0.522,-0.011,FAIL,0.005
+AD,PCA,2,ep_max,0.56,0.563,0.003,PASS,0.005
+AD,PCA,2,sub_min,0.49,0.5,0.01,FAIL,0.005
+AD,PCA,2,sub_max,0.6,0.5,-0.1,FAIL,0.005
+AD,PCA,2,gap_min,-6.1,2.215,8.315,FAIL,1.0
+AD,PCA,2,gap_max,4.3,6.272,1.972,FAIL,1.0
+FTD,T-test,6,ep_min,0.605,0.618,0.013,FAIL,0.005
+FTD,T-test,6,ep_max,0.631,0.646,0.015,FAIL,0.005
+FTD,T-test,6,sub_min,0.623,0.667,0.044,FAIL,0.005
+FTD,T-test,6,sub_max,0.65,0.667,0.017,FAIL,0.005
+FTD,T-test,6,gap_min,-4.2,-4.868,-0.668,PASS,1.0
+FTD,T-test,6,gap_max,-0.5,-2.055,-1.555,FAIL,1.0
+FTD,T-test,2,ep_min,0.604,0.59,-0.014,FAIL,0.005
+FTD,T-test,2,ep_max,0.624,0.621,-0.003,PASS,0.005
+FTD,T-test,2,sub_min,0.58,0.5,-0.08,FAIL,0.005
+FTD,T-test,2,sub_max,0.62,0.5,-0.12,FAIL,0.005
+FTD,T-test,2,gap_min,0.4,8.966,8.566,FAIL,1.0
+FTD,T-test,2,gap_max,4.1,12.15,8.05,FAIL,1.0
+FTD,PCA,6,ep_min,0.542,0.534,-0.008,FAIL,0.005
+FTD,PCA,6,ep_max,0.555,0.542,-0.013,FAIL,0.005
+FTD,PCA,6,sub_min,0.5,0.5,0.0,PASS,0.005
+FTD,PCA,6,sub_max,0.52,0.5,-0.02,FAIL,0.005
+FTD,PCA,6,gap_min,2.2,3.396,1.196,FAIL,1.0
+FTD,PCA,6,gap_max,4.5,4.21,-0.29,PASS,1.0
+FTD,PCA,2,ep_min,0.556,0.539,-0.017,FAIL,0.005
+FTD,PCA,2,ep_max,0.558,0.543,-0.015,FAIL,0.005
+FTD,PCA,2,sub_min,0.5,0.5,0.0,PASS,0.005
+FTD,PCA,2,sub_max,0.5,0.5,0.0,PASS,0.005
+FTD,PCA,2,gap_min,5.6,3.927,-1.673,FAIL,1.0
+FTD,PCA,2,gap_max,5.8,4.289,-1.511,FAIL,1.0
+MDD EC,T-test,6,ep_min,0.796,0.787,-0.009,FAIL,0.005
+MDD EC,T-test,6,ep_max,0.824,0.833,0.009,FAIL,0.005
+MDD EC,T-test,6,sub_min,0.83,0.833,0.003,PASS,0.005
+MDD EC,T-test,6,sub_max,0.883,0.917,0.034,FAIL,0.005
+MDD EC,T-test,6,gap_min,-5.9,-8.958,-3.058,FAIL,1.0
+MDD EC,T-test,6,gap_max,-3.4,-0.071,3.329,FAIL,1.0
+MDD EC,T-test,2,ep_min,0.792,0.897,0.105,FAIL,0.005
+MDD EC,T-test,2,ep_max,0.823,0.913,0.09,FAIL,0.005
+MDD EC,T-test,2,sub_min,0.8,1.0,0.2,FAIL,0.005
+MDD EC,T-test,2,sub_max,0.87,1.0,0.13,FAIL,0.005
+MDD EC,T-test,2,gap_min,-5.1,-10.261,-5.161,FAIL,1.0
+MDD EC,T-test,2,gap_max,-0.8,-8.749,-7.949,FAIL,1.0
+MDD EC,PCA,6,ep_min,0.487,0.492,0.005,FAIL,0.005
+MDD EC,PCA,6,ep_max,0.642,0.633,-0.009,FAIL,0.005
+MDD EC,PCA,6,sub_min,0.5,0.5,0.0,PASS,0.005
+MDD EC,PCA,6,sub_max,0.653,0.667,0.014,FAIL,0.005
+MDD EC,PCA,6,gap_min,-1.3,-3.355,-2.055,FAIL,1.0
+MDD EC,PCA,6,gap_max,-0.3,-0.488,-0.188,PASS,1.0
+MDD EC,PCA,2,ep_min,0.484,0.497,0.013,FAIL,0.005
+MDD EC,PCA,2,ep_max,0.666,0.601,-0.065,FAIL,0.005
+MDD EC,PCA,2,sub_min,0.5,0.5,0.0,PASS,0.005
+MDD EC,PCA,2,sub_max,0.71,0.5,-0.21,FAIL,0.005
+MDD EC,PCA,2,gap_min,-4.4,-0.251,4.149,FAIL,1.0
+MDD EC,PCA,2,gap_max,0.2,10.081,9.881,FAIL,1.0
+MDD EO,T-test,6,ep_min,0.748,0.754,0.006,FAIL,0.005
+MDD EO,T-test,6,ep_max,0.794,0.798,0.004,PASS,0.005
+MDD EO,T-test,6,sub_min,0.777,0.833,0.056,FAIL,0.005
+MDD EO,T-test,6,sub_max,0.847,0.833,-0.014,FAIL,0.005
+MDD EO,T-test,6,gap_min,-5.4,-7.944,-2.544,FAIL,1.0
+MDD EO,T-test,6,gap_max,-2.8,-3.522,-0.722,PASS,1.0
+MDD EO,T-test,2,ep_min,0.768,0.88,0.112,FAIL,0.005
+MDD EO,T-test,2,ep_max,0.867,0.95,0.083,FAIL,0.005
+MDD EO,T-test,2,sub_min,0.76,1.0,0.24,FAIL,0.005
+MDD EO,T-test,2,sub_max,0.94,1.0,0.06,FAIL,0.005
+MDD EO,T-test,2,gap_min,-8.5,-11.98,-3.48,FAIL,1.0
+MDD EO,T-test,2,gap_max,0.8,-5.044,-5.844,FAIL,1.0
+MDD EO,PCA,6,ep_min,0.494,0.497,0.003,PASS,0.005
+MDD EO,PCA,6,ep_max,0.63,0.64,0.01,FAIL,0.005
+MDD EO,PCA,6,sub_min,0.5,0.5,0.0,PASS,0.005
+MDD EO,PCA,6,sub_max,0.653,0.667,0.014,FAIL,0.005
+MDD EO,PCA,6,gap_min,-2.3,-2.705,-0.405,PASS,1.0
+MDD EO,PCA,6,gap_max,-0.1,-0.251,-0.151,PASS,1.0
+MDD EO,PCA,2,ep_min,0.5,0.497,-0.003,PASS,0.005
+MDD EO,PCA,2,ep_max,0.7,0.719,0.019,FAIL,0.005
+MDD EO,PCA,2,sub_min,0.5,0.5,0.0,PASS,0.005
+MDD EO,PCA,2,sub_max,0.74,0.5,-0.24,FAIL,0.005
+MDD EO,PCA,2,gap_min,-4.0,-0.251,3.749,FAIL,1.0
+MDD EO,PCA,2,gap_max,0.3,21.882,21.582,FAIL,1.0
+SCZ,T-test,6,ep_min,0.556,0.555,-0.001,PASS,0.005
+SCZ,T-test,6,ep_max,0.597,0.599,0.002,PASS,0.005
+SCZ,T-test,6,sub_min,0.587,0.667,0.08,FAIL,0.005
+SCZ,T-test,6,sub_max,0.69,0.667,-0.023,FAIL,0.005
+SCZ,T-test,6,gap_min,-10.1,-11.152,-1.052,FAIL,1.0
+SCZ,T-test,6,gap_max,-2.9,-6.766,-3.866,FAIL,1.0
+SCZ,T-test,2,ep_min,0.52,0.526,0.006,FAIL,0.005
+SCZ,T-test,2,ep_max,0.566,0.587,0.021,FAIL,0.005
+SCZ,T-test,2,sub_min,0.44,0.5,0.06,FAIL,0.005
+SCZ,T-test,2,sub_max,0.65,0.5,-0.15,FAIL,0.005
+SCZ,T-test,2,gap_min,-8.4,2.594,10.994,FAIL,1.0
+SCZ,T-test,2,gap_max,8.0,8.661,0.661,PASS,1.0
+SCZ,PCA,6,ep_min,0.473,0.454,-0.019,FAIL,0.005
+SCZ,PCA,6,ep_max,0.557,0.563,0.006,FAIL,0.005
+SCZ,PCA,6,sub_min,0.497,0.5,0.003,PASS,0.005
+SCZ,PCA,6,sub_max,0.567,0.5,-0.067,FAIL,0.005
+SCZ,PCA,6,gap_min,-2.7,-4.627,-1.927,FAIL,1.0
+SCZ,PCA,6,gap_max,0.4,6.312,5.912,FAIL,1.0
+SCZ,PCA,2,ep_min,0.464,0.461,-0.003,PASS,0.005
+SCZ,PCA,2,ep_max,0.537,0.542,0.005,FAIL,0.005
+SCZ,PCA,2,sub_min,0.5,0.5,0.0,PASS,0.005
+SCZ,PCA,2,sub_max,0.5,0.5,0.0,PASS,0.005
+SCZ,PCA,2,gap_min,-3.6,-3.906,-0.306,PASS,1.0
+SCZ,PCA,2,gap_max,3.7,4.202,0.502,PASS,1.0

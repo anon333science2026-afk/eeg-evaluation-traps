@@ -1,0 +1,16 @@
+dataset,cell,claimed,computed,delta,status,tolerance
+AD,Ep_Acc_P6_disj,0.715,0.7148,-0.0002,PASS,0.005
+AD,Ep_Acc_overlap,0.851,0.8505,-0.0005,PASS,0.005
+AD,Inflation_pp,13.6,13.5758,-0.0242,PASS,0.5
+FTD,Ep_Acc_P6_disj,0.627,0.6275,0.0005,PASS,0.005
+FTD,Ep_Acc_overlap,0.871,0.8709,-0.0001,PASS,0.005
+FTD,Inflation_pp,24.3,24.3441,0.0441,PASS,0.5
+MDD EC,Ep_Acc_P6_disj,0.814,0.8135,-0.0005,PASS,0.005
+MDD EC,Ep_Acc_overlap,0.914,0.9135,-0.0005,PASS,0.005
+MDD EC,Inflation_pp,10.0,9.9938,-0.0062,PASS,0.5
+MDD EO,Ep_Acc_P6_disj,0.781,0.7813,0.0003,PASS,0.005
+MDD EO,Ep_Acc_overlap,0.911,0.9108,-0.0002,PASS,0.005
+MDD EO,Inflation_pp,13.0,12.9544,-0.0456,PASS,0.5
+SCZ,Ep_Acc_P6_disj,0.573,0.5729,-0.0001,PASS,0.005
+SCZ,Ep_Acc_overlap,0.851,0.8501,-0.0009,PASS,0.005
+SCZ,Inflation_pp,27.8,27.7213,-0.0787,PASS,0.5

@@ -1,0 +1,15 @@
+row,cell,claimed,computed,delta,status,tolerance
+80/20_overlap,epoch_med,83.8,83.46,-0.34,PASS,0.5
+80/20_overlap,epoch_iqr,8.6,8.64,0.04,PASS,0.5
+LPSO_P6_Ttest_MLP,subj_med,83.33,83.33,0.0,PASS,0.5
+LPSO_P6_Ttest_MLP,subj_iqr,16.67,16.67,-0.0,PASS,0.5
+LPSO_P6_Ttest_MLP,epoch_med,72.6,72.57,-0.03,PASS,0.5
+LPSO_P6_Ttest_MLP,epoch_iqr,14.3,14.32,0.02,PASS,0.5
+LPSO_P6_PCA_KNN,subj_med,50.0,50.0,0.0,PASS,0.5
+LPSO_P6_PCA_KNN,subj_iqr,33.33,33.33,0.0,PASS,0.5
+LPSO_P6_PCA_KNN,epoch_med,56.5,56.48,-0.02,PASS,0.5
+LPSO_P6_PCA_KNN,epoch_iqr,10.4,10.39,-0.01,PASS,0.5
+LPSO_P2_Ttest_MLP,subj_med,100.0,100.0,0.0,PASS,0.5
+LPSO_P2_Ttest_MLP,subj_iqr,50.0,50.0,0.0,PASS,0.5
+LPSO_P2_Ttest_MLP,epoch_med,74.9,74.86,-0.04,PASS,0.5
+LPSO_P2_Ttest_MLP,epoch_iqr,31.8,31.8,-0.0,PASS,0.5

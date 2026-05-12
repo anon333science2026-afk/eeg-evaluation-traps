@@ -1,0 +1,7 @@
+experiment,claimed,computed,delta,status,method
+T-test_P_6,50,50,0,PASS,"unique fold_id where P=6, feature_set=ANOVA"
+PCA_P_6,50,50,0,PASS,"unique fold_id where P=6, feature_set=PCA"
+T-test_P_2,50,50,0,PASS,"unique fold_id where P=2, feature_set=ANOVA"
+PCA_P_2,50,50,0,PASS,"unique fold_id where P=2, feature_set=PCA"
+T-test_SO,10,10,0,PASS,"unique W_C seeds in data/w_c_per_model_accuracies.csv (cohort=ad, pipeline=PCA)"
+PCA_SO,10,10,0,PASS,"unique W_C seeds in data/w_c_per_model_accuracies.csv (cohort=ad, pipeline=PCA)"

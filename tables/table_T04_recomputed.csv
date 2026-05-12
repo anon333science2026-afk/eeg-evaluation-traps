@@ -1,0 +1,5 @@
+row,n_folds,median_pct,iqr_pp,min_pct,max_pct,ratio
+T-test P=6 MLP[100],50,72.57,14.32,54.93,90.01,
+T-test P=2 MLP[100],50,74.86,31.8,8.87,97.46,2.22
+PCA P=6 SVM rbf,50,59.93,8.26,44.12,74.26,
+PCA P=2 SVM rbf,50,55.05,14.84,24.74,78.56,1.8

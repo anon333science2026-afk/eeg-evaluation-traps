@@ -1,0 +1,7 @@
+fold,subjects,in_canonical_csv
+fold 1,"10,18,25,41,53,62",True
+fold 2,"10,21,28,38,41,52",True
+fold 3,"10,28,35,49,51,60",True
+fold 4,"10,30,34,40,53,54",True
+fold 5,"10,30,36,43,46,52",True
+fold 6,"11,22,23,43,64,65",True
