@@ -23,7 +23,7 @@ matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 np.random.seed(42)
 
-DATA_CSV  = Path(f"{REPO}/data/results/ftd/ftd_all_experiments_combined.csv")
+DATA_CSV  = Path(f"{REPO}/processed_data/results/ftd/ftd_all_experiments_combined.csv")
 OUTDIR    = Path(f"{REPO}/figures/out")
 
 CHANCE_EPOCH = 0.5965  # epoch-level (control majority; verified vs canonical parquet 2026-05-07)

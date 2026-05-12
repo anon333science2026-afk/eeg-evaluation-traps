@@ -28,7 +28,7 @@ matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 np.random.seed(42)
 
-BASE_FTD  = Path(f"{REPO}/data/results/ftd")
+BASE_FTD  = Path(f"{REPO}/processed_data/results/ftd")
 INTRA_DIR = BASE_FTD / "intra-subject_seed_runs"
 DATA_CSV  = BASE_FTD / "ftd_all_experiments_combined.csv"
 OUTDIR    = Path(f"{REPO}/figures/out")

@@ -28,7 +28,7 @@ matplotlib.rcParams["mathtext.rm"] = "Helvetica"
 np.random.seed(42)
 
 BASE     = Path(__file__).parent
-DATA_DIR = Path(f"{REPO}/data/results/ad")
+DATA_DIR = Path(f"{REPO}/processed_data/results/ad")
 ROOT     = REPO
 DATA_CSV = DATA_DIR / "ad_all_experiments_combined.csv"
 WC_DIR   = ROOT   # W_C result dirs live at the root

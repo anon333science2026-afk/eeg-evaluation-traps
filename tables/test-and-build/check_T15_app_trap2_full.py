@@ -35,11 +35,11 @@ PAPER = {
 TOL = dict(iqr=0.5, ratio=0.2)
 
 COMB_CSV = {
-    "AD":     ROOT/"data/results/ad/ad_all_experiments_combined.csv",
-    "FTD":    ROOT/"data/results/ftd/ftd_all_experiments_combined.csv",
-    "MDD EC": ROOT/"data/results/mdd/mdd_all_experiments_combined.csv",
-    "MDD EO": ROOT/"data/results/mdd/mdd_all_experiments_combined.csv",
-    "SCZ":    ROOT/"data/results/scz/scz_all_experiments_combined.csv",
+    "AD":     ROOT/"processed_data/results/ad/ad_all_experiments_combined.csv",
+    "FTD":    ROOT/"processed_data/results/ftd/ftd_all_experiments_combined.csv",
+    "MDD EC": ROOT/"processed_data/results/mdd/mdd_all_experiments_combined.csv",
+    "MDD EO": ROOT/"processed_data/results/mdd/mdd_all_experiments_combined.csv",
+    "SCZ":    ROOT/"processed_data/results/scz/scz_all_experiments_combined.csv",
 }
 EXP = {
     "AD":     dict(t6="ANOVA_L_6_Random", t2="ANOVA_L_2_Random", p6="PCA_L_6_Random", p2="PCA_L_2_Random"),

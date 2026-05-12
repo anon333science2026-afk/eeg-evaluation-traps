@@ -14,9 +14,9 @@ Submitted to NeurIPS 2026.
 | ------------------------------------------------------------------------------------------ | -------------- |
 | `configs/` — 120 YAML pipeline configurations (5 cohorts × 24 each)                        | ✅ Released    |
 | `manifests/` — held-out subject IDs per fold for every cohort                              | ✅ Released    |
-| `data/` — canonical EEG parquets, results CSVs, and W_C summary CSVs                       | ✅ Released    |
-| `tables/` — per-table audit framework (recompute every paper table from `data/`)           | ✅ Released    |
-| `figures/` — figure regeneration scripts (every paper figure from `data/`)                 | ✅ Released    |
+| `processed_data/` — canonical EEG parquets, results CSVs, and W_C summary CSVs                       | ✅ Released    |
+| `tables/` — per-table audit framework (recompute every paper table from `processed_data/`)           | ✅ Released    |
+| `figures/` — figure regeneration scripts (every paper figure from `processed_data/`)                 | ✅ Released    |
 | `tools/` — helpers to rebuild W_C summary CSVs from raw pipeline outputs                   | ✅ Released    |
 | `pipeline/` — PySpark + Ray pipeline source                                                | 🚧 Coming soon |
 | `bids_builders/` — BIDS curation scripts for MDD and SCZ                                   | 🚧 Coming soon |
@@ -38,7 +38,8 @@ eeg-evaluation-traps/
 │   ├── mdd_eo/{lpso, w_c}/     MDD vs control, eyes-open (Mumtaz 2017)
 │   └── scz/{lpso, w_c}/        SCZ vs control (RepOD Olejarczyk 2017)
 ├── manifests/                  Held-out subject IDs per fold (10 CSVs)
-├── data/                       Canonical EEG data + audit summaries
+├── data_sources/               Per-cohort acquisition instructions + ds004504 submodule
+├── processed_data/             Canonical EEG data + audit summaries
 │   ├── canonical/<cohort>/     Post-rejection epoch parquets (5 cohorts)
 │   ├── results/<cohort>/       Combined and fold-level result CSVs
 │   ├── per_subject_summaries/  Per-subject epoch counts + top ANOVA features

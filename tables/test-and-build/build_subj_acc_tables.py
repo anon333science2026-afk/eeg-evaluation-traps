@@ -27,11 +27,11 @@ ROOT = REPO
 OUTDIR = Path(__file__).resolve().parent.parent
 
 DJ = [
-    ("AD",     "data/results/ad/ad_fold_epoch_vs_subject.csv",   "pipeline","FTest", None),
-    ("FTD",    "data/results/ftd/ftd_fold_epoch_vs_subject.csv",     "pipeline","FTest", None),
-    ("MDD-EC", "data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC"),
-    ("MDD-EO", "data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO"),
-    ("SCZ",    "data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
+    ("AD",     "processed_data/results/ad/ad_fold_epoch_vs_subject.csv",   "pipeline","FTest", None),
+    ("FTD",    "processed_data/results/ftd/ftd_fold_epoch_vs_subject.csv",     "pipeline","FTest", None),
+    ("MDD-EC", "processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC"),
+    ("MDD-EO", "processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO"),
+    ("SCZ",    "processed_data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
 ]
 WC = {
     "AD":     ("ANOVA_W_C_ad_cntrl_seed{seed}", ""),
@@ -47,11 +47,11 @@ _COHORT_KEY = {"AD": "ad", "FTD": "ftd", "MDD-EC": "mdd_ec", "MDD-EO": "mdd_eo",
 
 def overlap_subj(cohort_name, pipeline="ANOVA"):
     """Lookup pre-computed Sub. Acc. per (seed, model, task) from
-    data/w_c_subject_acc.csv (built by tools/precompute_wc_subj_acc.py).
+    processed_data/w_c_subject_acc.csv (built by tools/precompute_wc_subj_acc.py).
     """
     global _WC_SUBJ_CACHE
     if _WC_SUBJ_CACHE is None:
-        _WC_SUBJ_CACHE = pd.read_csv(REPO / "data/w_c_subject_acc.csv")
+        _WC_SUBJ_CACHE = pd.read_csv(REPO / "processed_data/w_c_subject_acc.csv")
     df = _WC_SUBJ_CACHE
     return df[(df["cohort"] == _COHORT_KEY[cohort_name]) & (df["pipeline"] == pipeline)]
 

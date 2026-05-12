@@ -24,7 +24,7 @@ matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 np.random.seed(42)
 
-BASE      = Path(f"{REPO}/data/ad_extras")
+BASE      = Path(f"{REPO}/processed_data/ad_extras")
 INTRA_DIR = BASE / "intra-subject"
 DATA_CSV  = BASE / "all_experiments_combined.csv"
 OUTDIR    = Path(f"{REPO}/figures/out")

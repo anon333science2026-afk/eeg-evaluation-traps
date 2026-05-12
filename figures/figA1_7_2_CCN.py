@@ -16,7 +16,7 @@ matplotlib.use("Agg")
 matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 
-BASE   = Path(f"{REPO}/data/ad_extras")
+BASE   = Path(f"{REPO}/processed_data/ad_extras")
 PREDS  = BASE / "per_subject_fold_predictions.csv"
 MERGED = BASE / "fold_epoch_vs_subject_merged.csv"
 OUTDIR = Path(f"{REPO}/figures/out")

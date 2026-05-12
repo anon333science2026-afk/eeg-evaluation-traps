@@ -18,7 +18,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent.parent
 
 OUTDIR = Path(__file__).resolve().parent.parent
-CSV = f"{REPO}/data/results/ad/ad_all_experiments_combined.csv"
+CSV = f"{REPO}/processed_data/results/ad/ad_all_experiments_combined.csv"
 
 # (label, exp, model, hp_substring, claimed_median%, claimed_iqr_pp, claimed_min%, claimed_max%, claimed_ratio_or_None)
 ROWS = [

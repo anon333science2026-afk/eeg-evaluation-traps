@@ -18,7 +18,7 @@ matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 matplotlib.rcParams["mathtext.fontset"] = "custom"
 matplotlib.rcParams["mathtext.rm"] = "Helvetica"
 
-DATA_CSV = Path(f"{REPO}/data/ad_extras/fold_epoch_vs_subject_merged.csv")
+DATA_CSV = Path(f"{REPO}/processed_data/ad_extras/fold_epoch_vs_subject_merged.csv")
 OUTDIR   = Path(f"{REPO}/figures/out")
 
 MODEL_ORDER = ["MLP", "KNN", "SVM", "XGBoost"]

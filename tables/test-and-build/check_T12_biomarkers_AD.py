@@ -30,8 +30,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent.parent
 
 OUTDIR = Path(__file__).resolve().parent.parent
-PARQUET = f"{REPO}/data/canonical/ad/processed_subjects"
-INDEX_MAP_CSV = f"{REPO}/data/per_subject_summaries/top_anova_features_AD.csv"
+PARQUET = f"{REPO}/processed_data/canonical/ad/processed_subjects"
+INDEX_MAP_CSV = f"{REPO}/processed_data/per_subject_summaries/top_anova_features_AD.csv"
 
 # ── Paper claims (Table 12, rows in published rank order) ────────────────────
 PAPER = [

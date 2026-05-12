@@ -21,7 +21,7 @@ REPO = Path(__file__).resolve().parent.parent.parent
 
 OUTDIR = Path(__file__).resolve().parent.parent
 ROOT = REPO
-COMB_CSV = ROOT / "data/results/ad/ad_all_experiments_combined.csv"
+COMB_CSV = ROOT / "processed_data/results/ad/ad_all_experiments_combined.csv"
 
 # Paper claims: (experiment_id, pipeline, split_type, P, unique_folds)
 PAPER = [
@@ -48,9 +48,9 @@ def main():
             note = f"unique fold_id where P={P}, feature_set={pipe}"
         else:  # SO — count unique seeds present in W_C summary CSV (AD cohort)
             pipe_key = "ANOVA" if pipe == "FTest" else "PCA"
-            wc = pd.read_csv(ROOT / "data/w_c_per_model_accuracies.csv")
+            wc = pd.read_csv(ROOT / "processed_data/w_c_per_model_accuracies.csv")
             n_folds = wc[(wc["cohort"] == "ad") & (wc["pipeline"] == pipe_key)]["seed"].nunique()
-            note = f"unique W_C seeds in data/w_c_per_model_accuracies.csv (cohort=ad, pipeline={pipe_key})"
+            note = f"unique W_C seeds in processed_data/w_c_per_model_accuracies.csv (cohort=ad, pipeline={pipe_key})"
 
         delta = n_folds - paper_n
         stat = "PASS" if delta == 0 else "FAIL"

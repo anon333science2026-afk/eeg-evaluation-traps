@@ -25,18 +25,18 @@ REPO = Path(__file__).resolve().parent.parent.parent
 OUTDIR = Path(__file__).resolve().parent.parent
 
 CANONICAL = {
-    "AD":     f"{REPO}/data/canonical/ad/processed_subjects",
-    "FTD":    f"{REPO}/data/canonical/ftd/processed_subjects",
-    "MDD-EC": f"{REPO}/data/canonical/mdd_ec/processed_subjects",
-    "MDD-EO": f"{REPO}/data/canonical/mdd_eo/processed_subjects",
-    "SCZ":    f"{REPO}/data/canonical/scz/processed_subjects",
+    "AD":     f"{REPO}/processed_data/canonical/ad/processed_subjects",
+    "FTD":    f"{REPO}/processed_data/canonical/ftd/processed_subjects",
+    "MDD-EC": f"{REPO}/processed_data/canonical/mdd_ec/processed_subjects",
+    "MDD-EO": f"{REPO}/processed_data/canonical/mdd_eo/processed_subjects",
+    "SCZ":    f"{REPO}/processed_data/canonical/scz/processed_subjects",
 }
 INDEX_MAP = {
-    "AD":     f"{REPO}/data/per_subject_summaries/top_anova_features_AD.csv",
-    "FTD":    f"{REPO}/data/per_subject_summaries/top_anova_features_FTD.csv",
-    "MDD-EC": f"{REPO}/data/per_subject_summaries/top_anova_features_MDD_EC.csv",
-    "MDD-EO": f"{REPO}/data/per_subject_summaries/top_anova_features_MDD_EO.csv",
-    "SCZ":    f"{REPO}/data/per_subject_summaries/top_anova_features_SCZ.csv",
+    "AD":     f"{REPO}/processed_data/per_subject_summaries/top_anova_features_AD.csv",
+    "FTD":    f"{REPO}/processed_data/per_subject_summaries/top_anova_features_FTD.csv",
+    "MDD-EC": f"{REPO}/processed_data/per_subject_summaries/top_anova_features_MDD_EC.csv",
+    "MDD-EO": f"{REPO}/processed_data/per_subject_summaries/top_anova_features_MDD_EO.csv",
+    "SCZ":    f"{REPO}/processed_data/per_subject_summaries/top_anova_features_SCZ.csv",
 }
 DISEASE_GROUP = {"AD":"alz", "FTD":"ftd", "MDD-EC":"mdd", "MDD-EO":"mdd", "SCZ":"scz"}
 

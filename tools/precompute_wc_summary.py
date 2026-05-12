@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Walk every ANOVA_W_C / PCA_W_C seed dir across cohorts and emit
-data/w_c_per_model_accuracies.csv with columns:
+processed_data/w_c_per_model_accuracies.csv with columns:
   cohort, pipeline, seed, model, accuracy
 
 Replicates the same per-model logic used by T05 overlap_per_model() and
@@ -17,7 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 REPO = Path(__file__).resolve().parent.parent
-OUT = REPO / "data/w_c_per_model_accuracies.csv"
+OUT = REPO / "processed_data/w_c_per_model_accuracies.csv"
 # Override the SRC env var to point at your local raw pipeline-output tree.
 #   SRC=/your/path/to/eeg-pipeline-outputs python tools/precompute_wc_summary.py
 SRC = Path(os.environ.get("SRC", "/path/to/eeg-pipeline-outputs"))

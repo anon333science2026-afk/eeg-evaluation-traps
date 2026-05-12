@@ -26,11 +26,11 @@ ROOT = REPO
 
 DJ_CONFIG = [
     # (name, combined_csv, exp_name, feat_set_value)
-    ("AD",     "data/results/ad/ad_all_experiments_combined.csv",         "ANOVA_L_6_Random",  "ANOVA"),
-    ("FTD",    "data/results/ftd/ftd_all_experiments_combined.csv",            "ANOVA_L_6_FTD",     "ANOVA"),
-    ("MDD EC", "data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EC",      "ANOVA"),
-    ("MDD EO", "data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EO",      "ANOVA"),
-    ("SCZ",    "data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ",     "ANOVA"),
+    ("AD",     "processed_data/results/ad/ad_all_experiments_combined.csv",         "ANOVA_L_6_Random",  "ANOVA"),
+    ("FTD",    "processed_data/results/ftd/ftd_all_experiments_combined.csv",            "ANOVA_L_6_FTD",     "ANOVA"),
+    ("MDD EC", "processed_data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EC",      "ANOVA"),
+    ("MDD EO", "processed_data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EO",      "ANOVA"),
+    ("SCZ",    "processed_data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ",     "ANOVA"),
 ]
 WC_CONFIG = {
     "AD":     ("ANOVA_W_C_ad_cntrl_seed{seed}", ""),
@@ -72,7 +72,7 @@ _WC_CACHE = None
 def _wc_df():
     global _WC_CACHE
     if _WC_CACHE is None:
-        _WC_CACHE = pd.read_csv(REPO / "data/w_c_per_model_accuracies.csv")
+        _WC_CACHE = pd.read_csv(REPO / "processed_data/w_c_per_model_accuracies.csv")
     return _WC_CACHE
 
 # cohort name (matches T05 DJ_CONFIG first column) → key in w_c_per_model_accuracies.csv

@@ -16,7 +16,7 @@ matplotlib.use("Agg")
 matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 
-CSV_DIR = Path(f"{REPO}/data/per_subject_summaries")
+CSV_DIR = Path(f"{REPO}/processed_data/per_subject_summaries")
 OUTDIR  = Path(f"{REPO}/figures/out")
 
 CONFIGS = [

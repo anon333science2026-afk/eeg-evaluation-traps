@@ -27,7 +27,7 @@ matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 np.random.seed(42)
 
-BASE_SCZ  = Path(f"{REPO}/data/results/scz")
+BASE_SCZ  = Path(f"{REPO}/processed_data/results/scz")
 DATA_CSV  = BASE_SCZ / "scz_all_experiments_combined.csv"
 OUTDIR    = Path(f"{REPO}/figures/out")
 

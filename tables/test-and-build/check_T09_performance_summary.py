@@ -22,8 +22,8 @@ REPO = Path(__file__).resolve().parent.parent.parent
 
 OUTDIR = Path(__file__).resolve().parent.parent
 ROOT = REPO
-FOLD_CSV = ROOT/"data/results/ad/ad_fold_epoch_vs_subject.csv"
-COMB_CSV = ROOT/"data/results/ad/ad_all_experiments_combined.csv"
+FOLD_CSV = ROOT/"processed_data/results/ad/ad_fold_epoch_vs_subject.csv"
+COMB_CSV = ROOT/"processed_data/results/ad/ad_all_experiments_combined.csv"
 
 PAPER = [
     # (label, subj%, subj_iqr, epoch%, epoch_iqr)
@@ -37,7 +37,7 @@ TOL = 0.5  # pp
 
 def overlap_t_test_stats():
     """Get T-test overlap (W_C) epoch accuracies across 10 seeds × 4 models, AD only."""
-    wc = pd.read_csv(REPO / "data/w_c_per_model_accuracies.csv")
+    wc = pd.read_csv(REPO / "processed_data/w_c_per_model_accuracies.csv")
     accs = wc[(wc["cohort"] == "ad") & (wc["pipeline"] == "ANOVA")]["accuracy"].tolist()
     if not accs: return None, None
     return np.median(accs)*100, (np.percentile(accs,75)-np.percentile(accs,25))*100

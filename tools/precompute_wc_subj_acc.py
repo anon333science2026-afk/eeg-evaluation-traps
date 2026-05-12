@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Pre-compute per-(cohort, pipeline, seed, model, task) Sub. Acc. (majority-vote)
-from W_C test_predictions parquets. Writes data/w_c_subject_acc.csv.
+from W_C test_predictions parquets. Writes processed_data/w_c_subject_acc.csv.
 
 Mirrors build_subj_acc_tables.py overlap_subj() exactly:
   - first 3 tasks per (seed, model) in sorted order
@@ -12,7 +12,7 @@ from pathlib import Path
 import pandas as pd
 
 REPO = Path(__file__).resolve().parent.parent
-OUT = REPO / "data/w_c_subject_acc.csv"
+OUT = REPO / "processed_data/w_c_subject_acc.csv"
 # Override SRC env var to point at your local raw pipeline-output tree.
 SRC = Path(os.environ.get("SRC", "/path/to/eeg-pipeline-outputs"))
 

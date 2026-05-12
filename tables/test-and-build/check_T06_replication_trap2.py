@@ -26,16 +26,16 @@ KNN_K7 = '"n_neighbors": 7'
 MODELS = ["MLP","XGBoost","SVM","KNN"]
 
 DATASETS = [
-    ("AD",     f"{REPO}/data/results/ad/ad_all_experiments_combined.csv",         "ANOVA_L_6_Random",  "ANOVA_L_2_Random",
-               f"{REPO}/data/results/ad/ad_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
-    ("FTD",    f"{REPO}/data/results/ftd/ftd_all_experiments_combined.csv",            "ANOVA_L_6_FTD",     "ANOVA_L_2_FTD",
-               f"{REPO}/data/results/ftd/ftd_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
-    ("MDD EC", f"{REPO}/data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EC",      "ANOVA_L_2_EC",
-               f"{REPO}/data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC"),
-    ("MDD EO", f"{REPO}/data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EO",      "ANOVA_L_2_EO",
-               f"{REPO}/data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO"),
-    ("SCZ",    f"{REPO}/data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ",     "ANOVA_L_2_SCZ",
-               f"{REPO}/data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
+    ("AD",     f"{REPO}/processed_data/results/ad/ad_all_experiments_combined.csv",         "ANOVA_L_6_Random",  "ANOVA_L_2_Random",
+               f"{REPO}/processed_data/results/ad/ad_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
+    ("FTD",    f"{REPO}/processed_data/results/ftd/ftd_all_experiments_combined.csv",            "ANOVA_L_6_FTD",     "ANOVA_L_2_FTD",
+               f"{REPO}/processed_data/results/ftd/ftd_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
+    ("MDD EC", f"{REPO}/processed_data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EC",      "ANOVA_L_2_EC",
+               f"{REPO}/processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC"),
+    ("MDD EO", f"{REPO}/processed_data/results/mdd/mdd_all_experiments_combined.csv",        "ANOVA_L_6_EO",      "ANOVA_L_2_EO",
+               f"{REPO}/processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO"),
+    ("SCZ",    f"{REPO}/processed_data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ",     "ANOVA_L_2_SCZ",
+               f"{REPO}/processed_data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None),
 ]
 PAPER = {  # iqr_p6, iqr_p2, ratio, ep_p6, ep_p2, sub_p6, sub_p2
     "AD":     (11.8, 26.2, 2.2, 0.924, 0.975, 1.000, 1.000),

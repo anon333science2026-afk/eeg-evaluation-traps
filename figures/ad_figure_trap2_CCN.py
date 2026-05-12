@@ -19,7 +19,7 @@ matplotlib.use("Agg")
 np.random.seed(42)
 
 BASE       = Path(__file__).parent
-DATA_CSV   = Path(f"{REPO}/data/results/ad/ad_all_experiments_combined.csv")
+DATA_CSV   = Path(f"{REPO}/processed_data/results/ad/ad_all_experiments_combined.csv")
 OUTDIR     = REPO / "figures/out"
 
 

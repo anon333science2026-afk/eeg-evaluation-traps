@@ -26,7 +26,7 @@ matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 matplotlib.rcParams["mathtext.fontset"] = "custom"
 matplotlib.rcParams["mathtext.rm"] = "Helvetica"
 
-IN_CSV  = Path(f"{REPO}/data/results/ad/ad_fold_epoch_vs_subject.csv")
+IN_CSV  = Path(f"{REPO}/processed_data/results/ad/ad_fold_epoch_vs_subject.csv")
 OUT_DIR = Path(f"{REPO}/figures/out")
 
 CHANCE_EPOCH = 18607 / 34044   # 0.547 — epoch-level majority class

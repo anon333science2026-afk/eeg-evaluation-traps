@@ -22,7 +22,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent.parent
 
 OUTDIR = Path(__file__).resolve().parent.parent
-FOLD_CSV = f"{REPO}/data/results/ad/ad_fold_epoch_vs_subject.csv"
+FOLD_CSV = f"{REPO}/processed_data/results/ad/ad_fold_epoch_vs_subject.csv"
 
 PAPER = [  # Corrected 2026-05-07 to match canonical AD P=6 fold data (first 6 folds, sorted by lowest subject ID)
     ("fold 1", [10, 18, 25, 41, 53, 62]),

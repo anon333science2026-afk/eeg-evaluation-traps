@@ -23,16 +23,16 @@ MODELS = ["MLP","XGBoost","SVM","KNN"]
 
 DATASETS = [
     # (name, fold_csv, fold_pipe_col, fold_pipe_val, condition, combined_csv, combined_exp_name)
-    ("AD",     f"{REPO}/data/results/ad/ad_fold_epoch_vs_subject.csv",   "pipeline","FTest", None,
-               f"{REPO}/data/results/ad/ad_all_experiments_combined.csv", "ANOVA_L_6_Random"),
-    ("FTD",    f"{REPO}/data/results/ftd/ftd_fold_epoch_vs_subject.csv",     "pipeline","FTest", None,
-               f"{REPO}/data/results/ftd/ftd_all_experiments_combined.csv", "ANOVA_L_6_FTD"),
-    ("MDD EC", f"{REPO}/data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC",
-               f"{REPO}/data/results/mdd/mdd_all_experiments_combined.csv", "ANOVA_L_6_EC"),
-    ("MDD EO", f"{REPO}/data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO",
-               f"{REPO}/data/results/mdd/mdd_all_experiments_combined.csv", "ANOVA_L_6_EO"),
-    ("SCZ",    f"{REPO}/data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None,
-               f"{REPO}/data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ"),
+    ("AD",     f"{REPO}/processed_data/results/ad/ad_fold_epoch_vs_subject.csv",   "pipeline","FTest", None,
+               f"{REPO}/processed_data/results/ad/ad_all_experiments_combined.csv", "ANOVA_L_6_Random"),
+    ("FTD",    f"{REPO}/processed_data/results/ftd/ftd_fold_epoch_vs_subject.csv",     "pipeline","FTest", None,
+               f"{REPO}/processed_data/results/ftd/ftd_all_experiments_combined.csv", "ANOVA_L_6_FTD"),
+    ("MDD EC", f"{REPO}/processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EC",
+               f"{REPO}/processed_data/results/mdd/mdd_all_experiments_combined.csv", "ANOVA_L_6_EC"),
+    ("MDD EO", f"{REPO}/processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv", "feature_set","ANOVA","EO",
+               f"{REPO}/processed_data/results/mdd/mdd_all_experiments_combined.csv", "ANOVA_L_6_EO"),
+    ("SCZ",    f"{REPO}/processed_data/results/scz/scz_fold_epoch_vs_subject.csv", "pipeline","FTest", None,
+               f"{REPO}/processed_data/results/scz/scz_all_experiments_combined.csv", "ANOVA_L_6_SCZ"),
 ]
 PAPER = {"AD":(0.715,0.833,11.9),"FTD":(0.627,0.667,3.9),"MDD EC":(0.814,0.854,4.1),
          "MDD EO":(0.781,0.833,5.2),"SCZ":(0.573,0.667,9.4)}

@@ -27,11 +27,11 @@ REPO = Path(__file__).resolve().parent.parent.parent
 OUTDIR = Path(__file__).resolve().parent.parent
 
 CANONICAL = {
-    "AD":     f"{REPO}/data/canonical/ad/processed_subjects",
-    "FTD":    f"{REPO}/data/canonical/ftd/processed_subjects",
-    "MDD-EC": f"{REPO}/data/canonical/mdd_ec/processed_subjects",
-    "MDD-EO": f"{REPO}/data/canonical/mdd_eo/processed_subjects",
-    "SCZ":    f"{REPO}/data/canonical/scz/processed_subjects",
+    "AD":     f"{REPO}/processed_data/canonical/ad/processed_subjects",
+    "FTD":    f"{REPO}/processed_data/canonical/ftd/processed_subjects",
+    "MDD-EC": f"{REPO}/processed_data/canonical/mdd_ec/processed_subjects",
+    "MDD-EO": f"{REPO}/processed_data/canonical/mdd_eo/processed_subjects",
+    "SCZ":    f"{REPO}/processed_data/canonical/scz/processed_subjects",
 }
 DISEASE_GROUP = {"AD": "alz", "FTD": "ftd", "MDD-EC": "mdd", "MDD-EO": "mdd", "SCZ": "scz"}
 

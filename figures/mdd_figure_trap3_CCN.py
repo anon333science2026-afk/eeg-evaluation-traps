@@ -24,7 +24,7 @@ matplotlib.use("Agg")
 matplotlib.rcParams["font.family"] = "sans-serif"
 matplotlib.rcParams["font.sans-serif"] = ["Helvetica", "Arial", "sans-serif"]
 
-IN_CSV  = Path(f"{REPO}/data/results/mdd/mdd_fold_epoch_vs_subject.csv")
+IN_CSV  = Path(f"{REPO}/processed_data/results/mdd/mdd_fold_epoch_vs_subject.csv")
 OUTDIR  = Path(f"{REPO}/figures/out")
 
 MODEL_ORDER  = ["MLP", "XGBoost", "SVM", "KNN"]

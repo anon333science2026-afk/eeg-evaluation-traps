@@ -44,8 +44,8 @@ All scripts read only from `data/` in this repo. In particular, the four scripts
 that originally walked ~930 MB of `ml_results_grid_search/` raw outputs now read
 two small pre-computed summary CSVs:
 
-- `data/w_c_per_model_accuracies.csv` — per `(cohort, pipeline, seed, model)` accuracy
-- `data/w_c_subject_acc.csv` — per `(cohort, pipeline, seed, model, task)` Sub. Acc. (majority vote)
+- `processed_data/w_c_per_model_accuracies.csv` — per `(cohort, pipeline, seed, model)` accuracy
+- `processed_data/w_c_subject_acc.csv` — per `(cohort, pipeline, seed, model, task)` Sub. Acc. (majority vote)
 
 These are produced offline by `tools/precompute_wc_summary.py` and
 `tools/precompute_wc_subj_acc.py` from the raw pipeline outputs (not shipped in

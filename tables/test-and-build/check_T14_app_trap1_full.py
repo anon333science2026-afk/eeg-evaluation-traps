@@ -41,11 +41,11 @@ TOL = dict(acc=0.01, infl=2)
 
 # Data sources
 COMB_CSV = {
-    "AD":     ROOT/"data/results/ad/ad_all_experiments_combined.csv",
-    "FTD":    ROOT/"data/results/ftd/ftd_all_experiments_combined.csv",
-    "MDD EC": ROOT/"data/results/mdd/mdd_all_experiments_combined.csv",
-    "MDD EO": ROOT/"data/results/mdd/mdd_all_experiments_combined.csv",
-    "SCZ":    ROOT/"data/results/scz/scz_all_experiments_combined.csv",
+    "AD":     ROOT/"processed_data/results/ad/ad_all_experiments_combined.csv",
+    "FTD":    ROOT/"processed_data/results/ftd/ftd_all_experiments_combined.csv",
+    "MDD EC": ROOT/"processed_data/results/mdd/mdd_all_experiments_combined.csv",
+    "MDD EO": ROOT/"processed_data/results/mdd/mdd_all_experiments_combined.csv",
+    "SCZ":    ROOT/"processed_data/results/scz/scz_all_experiments_combined.csv",
 }
 EXP_NAMES = {
     "AD":     dict(ANOVA="ANOVA_L_6_Random", PCA="PCA_L_6_Random"),
@@ -84,7 +84,7 @@ _WC_CACHE = None
 def _wc_df():
     global _WC_CACHE
     if _WC_CACHE is None:
-        _WC_CACHE = pd.read_csv(REPO / "data/w_c_per_model_accuracies.csv")
+        _WC_CACHE = pd.read_csv(REPO / "processed_data/w_c_per_model_accuracies.csv")
     return _WC_CACHE
 
 _COHORT_KEY = {"AD": "ad", "FTD": "ftd", "MDD EC": "mdd_ec", "MDD EO": "mdd_eo", "SCZ": "scz"}
